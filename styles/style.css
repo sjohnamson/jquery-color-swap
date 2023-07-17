@@ -1,6 +1,8 @@
 .addedDiv {
-    background-color: crimson;
+    background-color: rgb(202, 11, 49);
+    color: rgb(153, 238, 211);
 }
 .yellowBack {
     background-color: rgba(240, 240, 17, 0.862);
+    color: green;
 }
