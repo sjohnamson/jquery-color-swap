@@ -2,7 +2,7 @@ $(onReady);
 
 let addedDivs = 1;
 
-function onReady () {
+function onReady() {
     // Listeners
     $('#genBtn').on('click', handleGen);
     $('#genDiv').on('click', '.yellowBtn', handleYellow);
@@ -10,9 +10,8 @@ function onReady () {
 }
 
 // function to create a div on gen button click
-function handleGen () {
-    console.log('clicked')
-    // append div with p with added div counter and 'yellow' and 'delete' buttons
+function handleGen() {
+    // append div containing: p with added div counter, 'yellow' button, and 'delete' button
     $('#genDiv').append(`
         <div class="addedDiv">
             <p>${addedDivs++}</p>
@@ -23,12 +22,12 @@ function handleGen () {
 }
 
 // yellow button function to make div background yellow
-function handleYellow () {
+function handleYellow() {
     $(this).parent().addClass('yellowBack');
 }
 
 // delete button on click function to delete button's div
-function handleDelete () {
+function handleDelete() {
     $(this).parent().remove();
 }
 
